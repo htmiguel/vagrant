@@ -42,4 +42,8 @@ server {
 create database ghostly_dev;
 grant all privileges on ghoslty_dev.* to 'miguel'@'%';
 9. import your database
+10. Make sure php knows you're the owner too...
+  sudo nano /etc/php5/fpm/pool.d/www.conf
+  sudo service php5-fpm restart
+
 
